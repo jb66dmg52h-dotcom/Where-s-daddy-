@@ -4,14 +4,14 @@
 
 namespace {
 
-constexpr lv_color_t Background = lv_color_hex(0x101418);
-constexpr lv_color_t Text = lv_color_hex(0xF5F7FA);
-constexpr lv_color_t MutedText = lv_color_hex(0x9EA7B3);
-constexpr lv_color_t ButtonFill = lv_color_hex(0x202832);
-constexpr lv_color_t ButtonPress = lv_color_hex(0x33404F);
-constexpr lv_color_t LiveGreen = lv_color_hex(0x62D45A);
-constexpr lv_color_t HeartRed = lv_color_hex(0xD9345C);
-constexpr lv_color_t StatusPurple = lv_color_hex(0xA855F7);
+const lv_color_t Background = lv_color_hex(0x101418);
+const lv_color_t Text = lv_color_hex(0xF5F7FA);
+const lv_color_t MutedText = lv_color_hex(0x9EA7B3);
+const lv_color_t ButtonFill = lv_color_hex(0x202832);
+const lv_color_t ButtonPress = lv_color_hex(0x33404F);
+const lv_color_t LiveGreen = lv_color_hex(0x62D45A);
+const lv_color_t HeartRed = lv_color_hex(0xD9345C);
+const lv_color_t StatusPurple = lv_color_hex(0xA855F7);
 
 void onGesture(lv_event_t *event) {
   const lv_dir_t direction = lv_indev_get_gesture_dir(lv_indev_get_act());
