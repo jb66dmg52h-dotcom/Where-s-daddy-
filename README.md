@@ -1,14 +1,14 @@
 # Where's Daddy
 
-ESP32-S3 graphical prototype for a 1.47 inch LCD display, styled from the
+ESP32-C6 graphical prototype for a 1.47 inch LCD display, styled from the
 `Ui/mockup` dashboard mockups.
 
 ## Current Prototype
 
-- PlatformIO project using the Arduino framework.
+- PlatformIO project for ESP32-C6 using the ESP-IDF framework.
 - LVGL dashboard UI with three landscape screens: Home, Driving, and Work.
-- TFT_eSPI display driver configured for a 172 x 320 ST7789 LCD, rotated to
-  320 x 172 landscape.
+- Native ESP-IDF `esp_lcd` display driver configured for a 172 x 320 ST7789
+  LCD, rotated to 320 x 172 landscape.
 - Swipe left/right and on-screen arrow navigation.
 - Optional physical button navigation, defaulting to GPIO 0 for next-screen.
 - Modular folders for screens, icons, location state, and future MQTT work.
@@ -27,15 +27,15 @@ pio run --target upload
 
 ## Display Pins
 
-The default TFT_eSPI pin configuration lives in `platformio.ini`. Update these
-build flags if your ESP32-S3 1.47 inch LCD board uses different wiring:
+The default display pin configuration lives in `include/app_config.h`. Update
+these values if your ESP32-C6 1.47 inch LCD board uses different wiring:
 
-- `TFT_MOSI`
-- `TFT_SCLK`
-- `TFT_CS`
-- `TFT_DC`
-- `TFT_RST`
-- `TFT_BL`
+- `TftMosiPin`
+- `TftSclkPin`
+- `TftCsPin`
+- `TftDcPin`
+- `TftRstPin`
+- `TftBacklightPin`
 
 ## Navigation
 
