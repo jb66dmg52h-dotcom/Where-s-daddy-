@@ -2,7 +2,8 @@
 
 ## 1. What Was Created
 
-- Complete PlatformIO project for an ESP32-S3 with a 1.47 inch 172 x 320 ST7789 LCD, rotated to a 320 x 172 landscape UI.
+- Complete PlatformIO project for an ESP32-C6 with a 1.47 inch 172 x 320 ST7789 LCD, rotated to a 320 x 172 landscape UI.
+- ESP-IDF display stack using native `esp_lcd` ST7789 support with LVGL rendering.
 - Fetched and reviewed the GitHub README and all mockup images on branch `Ui/mockup`: `IMG_1457.jpeg`, `IMG_1458.jpeg`, and `IMG_1459.jpeg`.
 - LVGL-based graphical prototype with three screens:
   - Home: large house icon and `AT HOME` dashboard status.
@@ -18,10 +19,12 @@
   - `lib` reserved for project-local PlatformIO libraries.
 - Swipe, on-screen arrow, and optional physical button navigation between screens.
 - Clear separation between UI code and future data-source code.
+- Verified firmware build with PlatformIO Core 6.1.19 using `pio run`.
 
 ## 2. Remaining Work
 
-- Confirm the LCD controller and exact ESP32-S3 pinout for the target hardware.
+- Confirm the LCD controller and exact ESP32-C6 pinout for the target hardware.
+- Confirm the target board flash size. The current config uses 2 MB because the connected board reported 2 MB flash during build checks.
 - Add touch input if the selected 1.47 inch LCD module includes a touch controller.
 - Configure a second physical navigation button if previous-screen hardware navigation is needed.
 - Replace placeholder driving speed and city values with live location data.
