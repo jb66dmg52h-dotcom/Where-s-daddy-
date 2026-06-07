@@ -16,13 +16,13 @@ lv_obj_t *createDrivingScreen() {
   char speedText[24];
   std::snprintf(speedText, sizeof(speedText), "%d km/h", state.speedKph);
 
-  const lv_color_t accent = lv_color_hex(0x168BDB);
+  const lv_color_t accent = lv_color_hex(0x1DA1FF);
   lv_obj_t *panel =
-      Ui::createHeroPanel(screen, "DRIVING", state.city, accent, lv_color_hex(0x0B3154), lv_color_hex(0x143F6A));
+      Ui::createHeroPanel(screen, "DRIVING", state.city, accent, lv_color_hex(0x063E69), lv_color_hex(0x0A5D91));
   lv_obj_t *icon = Icons::createVehicleIcon(panel, accent);
   Ui::createIconBadge(panel, icon, accent);
 
-  Ui::createInfoStrip(screen, "MOVING", speedText, "DRIVING", state.updatedTime, accent);
+  Ui::createInfoStrip(screen, "MOVING", speedText, "DRIVE", state.updatedTime, accent);
   Ui::createNavigationButtons(screen);
   return screen;
 }
