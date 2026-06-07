@@ -20,11 +20,12 @@
 - Swipe, on-screen arrow, and optional physical button navigation between screens.
 - Clear separation between UI code and future data-source code.
 - Verified firmware build with PlatformIO Core 6.1.19 using `pio run`.
+- First device flash completed successfully on `/dev/ttyACM0` using `pio run --target upload`.
 
 ## 2. Remaining Work
 
 - Confirm the LCD controller and exact ESP32-C6 pinout for the target hardware.
-- Confirm the target board flash size. The current config uses 2 MB because the connected board reported 2 MB flash during build checks.
+- Confirm the target board flash size and partition plan. The current config stays conservative at 2 MB even though esptool identified the chip as an ESP32-C6FH8 with 8 MB embedded flash during upload.
 - Add touch input if the selected 1.47 inch LCD module includes a touch controller.
 - Configure a second physical navigation button if previous-screen hardware navigation is needed.
 - Replace placeholder driving speed and city values with live location data.
