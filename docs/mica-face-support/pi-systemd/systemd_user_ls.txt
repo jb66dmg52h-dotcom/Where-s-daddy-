@@ -1,0 +1,29 @@
+debugfs 1.47.1 (20-May-2024)
+ 262254   40755 (2)   1000   1000    4096 18-Jun-2026 14:05 .
+ 262253   40755 (2)   1000   1000    4096 20-Apr-2026 20:13 ..
+ 262255   40700 (2)   1000   1000    4096 16-Jun-2026 16:50 default.target.wants
+ 262256   40700 (2)   1000   1000    4096 20-Apr-2026 20:13 paths.target.wants
+ 262232  100664 (1)   1000   1000    1116 21-Jun-2026 18:45 openclaw-gateway.service
+ 262225  100664 (1)   1000   1000     187 16-May-2026 12:31 openclaw-postboot-health.service
+ 262227  100664 (1)   1000   1000     190 13-Jun-2026 11:09 openclaw-postboot-health.timer
+ 556350   40755 (2)   1000   1000    4096 18-Jun-2026 14:05 timers.target.wants
+ 262264  100664 (1)   1000   1000     147 16-May-2026 15:22 codex-usage-sync.service
+ 262265  100664 (1)   1000   1000     192 16-May-2026 15:22 codex-usage-sync.timer
+ 271759  100664 (1)   1000   1000     118 16-May-2026 15:26 openclaw-codex-usage.service
+ 271760  100664 (1)   1000   1000     226 13-Jun-2026 11:09 openclaw-codex-usage.timer
+ 271761  100664 (1)   1000   1000     118 13-Jun-2026 11:09 openclaw-mesh-status.service
+ 271762  100664 (1)   1000   1000     226 13-Jun-2026 11:09 openclaw-mesh-status.timer
+ 271763  100664 (1)   1000   1000     268 24-May-2026 08:59 pi-weather-digest.service
+ 271764  100664 (1)   1000   1000     163 24-May-2026 08:59 pi-weather-digest.timer
+ 271765  100664 (1)   1000   1000     139 30-May-2026 12:39 openclaw-gateway-watchdog.service
+ 271766  100664 (1)   1000   1000     232 13-Jun-2026 11:09 openclaw-gateway-watchdog.timer
+ 271767  100664 (1)   1000   1000     326 25-May-2026 21:18 codex-remote-control.service
+ 271769  100664 (1)   1000   1000     547  2-Jun-2026 21:52 openclaw-mesh-live-watcher.service
+ 271771  100664 (1)   1000   1000     311  9-Jun-2026 21:44 mica-serial-bridge.service
+ 271773  100664 (1)   1000   1000     258 13-Jun-2026 09:22 pi-health-monitor.service
+ 271775  100664 (1)   1000   1000     221 13-Jun-2026 22:22 mesh-connectivity-watchdog.service
+ 271776  100664 (1)   1000   1000     243 13-Jun-2026 22:22 mesh-connectivity-watchdog.timer
+ 271770  100664 (1)   1000   1000     608 17-Jun-2026 20:07 remoteterm-meshcore.service
+ 2238595  100664 (1)   1000   1000     164 18-Jun-2026 14:04 rook-remoteterm-watch.service
+ 2238596  100664 (1)   1000   1000     225 18-Jun-2026 14:04 rook-remoteterm-watch.timer
+

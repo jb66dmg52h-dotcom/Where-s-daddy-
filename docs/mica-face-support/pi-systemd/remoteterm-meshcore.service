@@ -1,0 +1,16 @@
+[Unit]
+Description=RemoteTerm for MeshCore
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/jordan/Remote-Terminal-for-MeshCore
+ExecStart=/home/jordan/Remote-Terminal-for-MeshCore/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+Environment=MESHCORE_DATABASE_PATH=/home/jordan/Remote-Terminal-for-MeshCore/data/meshcore.db
+Environment=MESHCORE_SERIAL_PORT=/dev/serial/by-id/usb-Espressif_Systems_heltec_wifi_lora_32_v4__16_MB_FLASH__2_MB_PSRAM__441BF669CE78-if00
+Environment=MESHCORE_ENABLE_MESSAGE_POLL_FALLBACK=true
+
+[Install]
+WantedBy=default.target

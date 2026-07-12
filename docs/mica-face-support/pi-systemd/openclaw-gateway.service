@@ -1,0 +1,33 @@
+[Unit]
+Description=OpenClaw Gateway (v2026.5.12)
+After=network-online.target
+Wants=network-online.target
+StartLimitBurst=5
+StartLimitIntervalSec=60
+
+[Service]
+ExecStart=/usr/bin/node /home/jordan/.npm-global/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+Restart=always
+RestartSec=5
+RestartPreventExitStatus=78
+TimeoutStopSec=30
+TimeoutStartSec=30
+SuccessExitStatus=0 143
+KillMode=control-group
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=openclaw-gateway
+Environment=HOME=/home/jordan
+Environment=TMPDIR=/tmp
+Environment=PATH=/usr/bin:/home/jordan/.local/bin:/home/jordan/.npm-global/bin:/home/jordan/bin:/home/jordan/.nix-profile/bin:/usr/local/bin:/bin
+Environment=NODE_COMPILE_CACHE=/var/tmp/openclaw-node-compile-cache
+Environment=OPENCLAW_NO_RESPAWN=1
+Environment=OPENCLAW_GATEWAY_PORT=18789
+Environment=OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service
+Environment="OPENCLAW_WINDOWS_TASK_NAME=OpenClaw Gateway"
+Environment=OPENCLAW_SERVICE_MARKER=openclaw
+Environment=OPENCLAW_SERVICE_KIND=gateway
+Environment=OPENCLAW_SERVICE_VERSION=2026.5.12
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,60 @@
+--- /home/jordan/.config/systemd/user/default.target.wants ---
+debugfs 1.47.1 (20-May-2024)
+ 262255   40700 (2)   1000   1000    4096 16-Jun-2026 16:50 .
+ 262254   40755 (2)   1000   1000    4096 18-Jun-2026 14:05 ..
+ 262257  120777 (7)   1000   1000      41 20-Apr-2026 20:13 rpi-connect.service
+ 262259  120777 (7)   1000   1000      44 20-Apr-2026 20:13 rpi-connect-wayvnc.service
+ 266153  120777 (7)   1000   1000      58 16-May-2026 10:18 openclaw-gateway.service
+ 271768  120777 (7)   1000   1000      62 25-May-2026 21:18 codex-remote-control.service
+ 271778  120777 (7)   1000   1000      61 16-Jun-2026 16:50 remoteterm-meshcore.service
+ 271772  120777 (7)   1000   1000      60  9-Jun-2026 21:44 mica-serial-bridge.service
+ 271774  120777 (7)   1000   1000      59 13-Jun-2026 09:23 pi-health-monitor.service
+
+--- /home/jordan/.config/systemd/user/timers.target.wants ---
+debugfs 1.47.1 (20-May-2024)
+ 556350   40755 (2)   1000   1000    4096 18-Jun-2026 14:05 .
+ 262254   40755 (2)   1000   1000    4096 18-Jun-2026 14:05 ..
+ 556351  120777 (7)   1000   1000      64 16-May-2026 12:31 openclaw-postboot-health.timer
+ 556738  120777 (7)   1000   1000      60 16-May-2026 15:26 openclaw-codex-usage.timer
+ 559028  120777 (7)   1000   1000      60 16-May-2026 22:28 openclaw-mesh-status.timer
+ 552203  120777 (7)   1000   1000      57 24-May-2026 08:59 pi-weather-digest.timer
+ 552349  120777 (7)   1000   1000      65 30-May-2026 12:43 openclaw-gateway-watchdog.timer
+ 530876  120777 (7)   1000   1000      66 13-Jun-2026 22:23 mesh-connectivity-watchdog.timer
+ 531064  120777 (7)   1000   1000      61 18-Jun-2026 14:05 rook-remoteterm-watch.timer
+
+--- /etc/systemd/system/multi-user.target.wants ---
+debugfs 1.47.1 (20-May-2024)
+    830   40755 (2)      0      0    4096 24-May-2026 20:12 .
+    816   40755 (2)      0      0    4096 13-Jun-2026 23:34 ..
+    848  120777 (7)      0      0      46 20-Apr-2026 20:07 NetworkManager.service
+    849  120777 (7)      0      0      44 20-Apr-2026 20:07 avahi-daemon.service
+    850  120777 (7)      0      0      45 20-Apr-2026 20:07 console-setup.service
+    851  120777 (7)      0      0      36 20-Apr-2026 20:05 cron.service
+    852  120777 (7)      0      0      44 20-Apr-2026 20:05 e2scrub_reap.service
+    853  120777 (7)      0      0      40 20-Apr-2026 20:04 remote-fs.target
+    854  120777 (7)      0      0      49 20-Apr-2026 20:07 rpi-eeprom-update.service
+    855  120777 (7)      0      0      41 20-Apr-2026 20:07 sshswitch.service
+    856  120777 (7)      0      0      46 20-Apr-2026 20:07 wpa_supplicant.service
+  32363  120777 (7)      0      0      35 20-Apr-2026 20:13 ssh.service
+  73545  120777 (7)      0      0      42 16-May-2026 15:00 containerd.service
+  73699  120777 (7)      0      0      38 16-May-2026 15:00 docker.service
+  26877  120777 (7)      0      0      39 24-May-2026 19:32 machines.target
+  40599  120777 (7)      0      0      40 24-May-2026 19:32 virtlogd.service
+  55176  120777 (7)      0      0      46 24-May-2026 19:32 libvirt-guests.service
+  76807  120777 (7)      0      0      41 24-May-2026 19:32 virtlockd.service
+  76861  120777 (7)      0      0      40 24-May-2026 19:32 libvirtd.service
+   2462  120777 (7)      0      0      44 24-May-2026 20:12 haos-portforward.service
+
+--- /etc/systemd/system/timers.target.wants ---
+debugfs 1.47.1 (20-May-2024)
+    838   40755 (2)      0      0    4096 13-Jun-2026 23:34 .
+    816   40755 (2)      0      0    4096 13-Jun-2026 23:34 ..
+    869  120777 (7)      0      0      43 20-Apr-2026 20:04 apt-daily-upgrade.timer
+    870  120777 (7)      0      0      35 20-Apr-2026 20:04 apt-daily.timer
+    872  120777 (7)      0      0      40 20-Apr-2026 20:04 dpkg-db-backup.timer
+    873  120777 (7)      0      0      41 20-Apr-2026 20:05 e2scrub_all.timer
+    874  120777 (7)      0      0      32 20-Apr-2026 20:04 fstrim.timer
+    875  120777 (7)      0      0      39 20-Apr-2026 20:05 logrotate.timer
+    876  120777 (7)      0      0      36 20-Apr-2026 20:07 man-db.timer
+  42232  120777 (7)      0      0      47 13-Jun-2026 23:34 mesh-network-recovery.timer
+

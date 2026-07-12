@@ -1,0 +1,16 @@
+{
+  "discord_command_prefix": "!mica",
+  "model_api_style": "ollama",
+  "model_api_url": "http://127.0.0.1:11434/api/chat",
+  "model_name": "llama3.1",
+  "recent_memory_limit": 16,
+  "enable_codex_dev_tools": false,
+  "mqtt": {
+    "host": "127.0.0.1",
+    "port": 1883
+  },
+  "meshcore": {
+    "serial_port": "",
+    "baud": 115200
+  }
+}
